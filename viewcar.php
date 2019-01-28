@@ -27,7 +27,7 @@ $Ctype = $_POST["Ctype"];
 
 $res = "SELECT Vehicle_id,License_no,Model,Year,Drate AS Daily_Rate, Wrate AS Weekly_Rate FROM car WHERE Ctype='$Ctype'";
 $result = mysqli_query($connection, $res);
-echo "<h1><center>" . $Ctype . "&nbsp;Cars</h1><br><br>";
+echo "<h1 style='text-align: center;'>" . $Ctype . "&nbsp;Cars</h1><br><br>";
 ?>
 <center>
     <table class="table table-hover table-bordered" border='1'>

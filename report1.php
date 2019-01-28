@@ -47,7 +47,7 @@ if (mysqli_connect_errno()) {
 
 $res3 = "select * from history";
 $result3 = mysqli_query($connection, $res3);
-echo "<h1><center>History of Bookings</h1><br><br>";
+echo "<h1 style='text-align: center;'>History of Bookings</h1><br><br>";
 ?>
 <table class="table table-hover table-bordered">
     <thead>

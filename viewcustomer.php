@@ -41,9 +41,9 @@ $connection = mysqli_connect($database_host, $database_user, $database_pass, $da
 if (mysqli_connect_errno()) {
     die("Failed connecting to MySQL database. Invalid credentials" . mysqli_connect_error() . "(" . mysqli_connect_errno() . ")");
 }
-$res = "SELECT * FROM carrental.customer";
+$res = "SELECT * FROM Carrental.customer";
 $result = mysqli_query($connection, $res);
-echo "<h1><center>Customers</h1><br><br>";
+echo "<h1 style='text-align: center;'>Customers</h1><br><br>";
 ?>
 <div class="container">
     <table class="table table-hover table-bordered">

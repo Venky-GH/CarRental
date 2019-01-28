@@ -27,7 +27,7 @@ if (mysqli_connect_errno()) {
 <?php
 $res2 = "SELECT rental.Rid,rental.cid,rental.Vehicle_id,rental.Rdate,car.Model,car.Ctype,customer.Fname FROM rental INNER JOIN car ON rental.Vehicle_id = car.Vehicle_id INNER JOIN customer ON rental.cid=customer.Cid";
 $result2 = mysqli_query($connection, $res2);
-echo "<h1><center>Active and Scheduled Rentals</h1><br><br>";
+echo "<h1 style='text-align: center;'>Active and Scheduled Rentals</h1><br><br>";
 ?>
 <table class="table table-hover table-bordered" border='1'>
     <thead>

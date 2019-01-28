@@ -43,7 +43,7 @@ if (mysqli_connect_errno()) {
     $res = "select Vehicle_id,License_no,Model,Year,Drate AS Daily_Rate, Wrate AS Weekly_Rate from car where Vehicle_id not in (SELECT Vehicle_id FROM rental )";
     $result = mysqli_query($connection, $res);
 
-    echo "<h1><center>Available Cars</h1><br><br>";
+    echo "<h1 style='text-align: center;'>Available Cars</h1><br><br>";
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr class='warning'>";

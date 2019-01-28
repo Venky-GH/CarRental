@@ -21,7 +21,7 @@ if (isset($_POST["udrate"]) AND isset($_POST["uwrate"])) {
     $res = "UPDATE car SET Drate=$Drate,Wrate=$Wrate WHERE Ctype='$Ctype' AND Vehicle_id='$vid' ";
 }
 $result = mysqli_query($connection, $res);
-echo "<h1><center>" . $Ctype . "&nbsp;Rates updated</h1><br><br>";
+echo "<h1 style='text-align: center;'>" . $Ctype . "&nbsp;Rates updated</h1><br><br>";
 
 echo "<script>
 	var hi='$Ctype';

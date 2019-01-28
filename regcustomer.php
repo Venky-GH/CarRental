@@ -9,7 +9,7 @@ $database_host = "carrental.cvn4jmb3rmul.us-east-1.rds.amazonaws.com";
 $database_user = "Carrental";
 $database_pass = "Carrental";
 $database_name = "Carrental";
-$salt = 'XyZzy12*_';
+//$salt = 'XyZzy12*_';
 $valid = 1;
 $connection = mysqli_connect($database_host, $database_user, $database_pass, $database_name);
 if (mysqli_connect_errno()) {
@@ -45,7 +45,7 @@ if (empty($_POST['pass'])) {
 }
 if ($valid) {
 
-    $passh = hash('md5', $salt . $_POST['pass']);
+    $passh = $_POST['pass'];
     $result = "INSERT INTO customer(Fname,Lname,AGE,Mobile,Dno,password,username) VALUES('$Fname','$Lname','$AGE','$Mobile','$Dno','$passh','$user')";
     mysqli_query($connection, $result) or die(mysqli_error($connection));
     echo "<script>alert('Successfully Registered! Head to login!');
