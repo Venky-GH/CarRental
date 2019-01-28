@@ -1,7 +1,7 @@
 <?php
 session_start();
-echo "Session id is ".$_SESSION["id"];
-echo "Session id is ".$_SESSION["user"];
+echo "Session id is " . $_SESSION["id"];
+echo "Session id is " . $_SESSION["user"];
 /*if(isset($_SESSION["user"]))
 {
 	if($_SESSION["user"] != "admin")
