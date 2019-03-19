@@ -15,10 +15,10 @@
     </head>
 <body class="container jumbotron">
 <?php
-$database_host = "carrental.cvn4jmb3rmul.us-east-1.rds.amazonaws.com";
-$database_user = "Carrental";
-$database_pass = "Carrental";
-$database_name = "Carrental";
+$database_host = "localhost";
+$database_user = "root";
+$database_pass = "";
+$database_name = "carrental";
 $connection = mysqli_connect($database_host, $database_user, $database_pass, $database_name);
 if (mysqli_connect_errno()) {
     die("Failed connecting to MySQL database. Invalid credentials" . mysqli_connect_error() . "(" . mysqli_connect_errno() . ")");

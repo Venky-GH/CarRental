@@ -5,10 +5,10 @@
 </head>
 <body>
 <?php
-$database_host = "carrental.cvn4jmb3rmul.us-east-1.rds.amazonaws.com";
-$database_user = "Carrental";
-$database_pass = "Carrental";
-$database_name = "Carrental";
+$database_host = "localhost";
+$database_user = "root";
+$database_pass = "";
+$database_name = "carrental";
 //$salt = 'XyZzy12*_';
 $valid = 1;
 $connection = mysqli_connect($database_host, $database_user, $database_pass, $database_name);
